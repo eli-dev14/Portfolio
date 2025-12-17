@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de développeur web full-stack. Je conçois des sites et applications web simples, efficaces et pensés pour les humains.">
+    <title>Portfolio - Développeur Web Full-Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header id="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <a href="#accueil">
+                        <span class="logo-icon">&lt;/&gt;</span>
+                        <span class="logo-text">Eli</span>
+                    </a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="accueil" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="greeting">Bonjour, je suis</span>
+                            <span class="name">Développeur Web</span>
+                            <span class="title-highlight">Full-Stack</span>
+                        </h1>
+                        <p class="hero-description">
+                            Je conçois des sites et applications web simples et efficaces.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projets" class="btn btn-primary">
+                                <i class="fas fa-folder-open"></i>
+                                Voir mes projets
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fab fa-whatsapp"></i>
+                                Me contacter
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projets réalisés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Satisfaction client</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Années d'expérience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="photo-profil.jpeg" alt="Développeur Web Full-Stack">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="decoration-shape shape-1"></div>
+                <div class="decoration-shape shape-2"></div>
+            </div>
+        </section>
+
+        
+        <section id="apropos" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Passionné par le développement web depuis plusieurs années, je me suis lancé dans cette aventure avec une conviction simple : <strong>la technologie doit nous servir</strong>.
+                        </p>
+                        <p>
+                            Mon parcours n'a pas toujours été linéaire, mais c'est ce qui fait sa richesse. J'ai appris à coder par curiosité, par envie de créer des choses qui ont du sens. Aujourd'hui, je suis développeur full-stack, capable de concevoir un projet de A à Z : de l'interface utilisateur jusqu'à la logique serveur.
+                        </p>
+                        <p>
+                            Ce qui me motive ? <strong>Résoudre des problèmes concrets</strong>, simplifier la vie des utilisateurs et créer des expériences web qui fonctionnent vraiment. Je crois fermement qu'un bon site web doit être intuitif, rapide et accessible à tous.
+                        </p>
+                        <div class="about-values">
+                            <h3>Mes valeurs</h3>
+                            <ul class="values-list">
+                                <li><i class="fas fa-check-circle"></i> <strong>Rigueur</strong> : Chaque ligne de code compte</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Curiosité</strong> : Toujours apprendre, toujours évoluer</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Simplicité</strong> : L'élégance dans la sobriété</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-card">
+                            <div class="card-decoration"></div>
+                            <div class="card-content">
+                                <i class="fas fa-code card-icon"></i>
+                                <h3>Ma vision</h3>
+                                <p>Créer des expériences web, performantes et accessibles qui font la différence dans la vie des utilisateurs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="competences" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mes compétences</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Les technologies que je maîtrise pour donner vie à vos projets</p>
+                </div>
+                <div class="skills-grid">
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-paint-brush category-icon"></i>
+                            <h3>Front-end</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-sass"></i>
+                                <span>Sass</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-server category-icon"></i>
+                            <h3>Back-end</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>API REST</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools category-icon"></i>
+                            <h3>Outils</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Déploiement</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="projets" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mes projets</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Découvrez quelques réalisations qui illustrent mon travail</p>
+                </div>
+                <div class="projects-grid">
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="grace-kom.jpg" alt="Site de présentation de Gace Kom">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://grace-kom.vercel.app/" class="project-link" aria-label="Voir le projet">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/eli-dev14/GraceKom" class="project-link" aria-label="Voir le code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Site de GraceKom</h3>
+                            <p class="project-description">
+                                Plateforme de présentation de GraceKom situé au Togo. Interface intuitive et responsive.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="eco-gest.png" alt="Application de gestion">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/eli-dev14/EcoGest" class="project-link" aria-label="Voir le projet">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/eli-dev14/EcoGest" class="project-link" aria-label="Voir le code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Application de gestion</h3>
+                            <p class="project-description">
+                                Outil de gestion de déchets avec système d'authentification, tableaux de bord et notifications en temps réel.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">API REST</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="efgs.jpg" alt="">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://english-for-global-sucess.vercel.app/" class="project-link" aria-label="Voir le projet">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/eli-dev14/English-for-Global-Sucess" class="project-link" aria-label="Voir le code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">English for Global Sucess</h3>
+                            <p class="project-description">
+                                Site vitrine pour une instut d'apprentissage de l'anglais et formulaire de contact intégré.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Figma</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="flex.jpg" alt="Blog personnel">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://flex-studio-psi.vercel.app/" class="project-link" aria-label="Voir le projet">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/eli-dev14/Flex-studio" class="project-link" aria-label="Voir le code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Site de studio</h3>
+                            <p class="project-description">
+                                Plateforme de présentation pour un studio de design avec galerie d'images et section témoignages.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="task.png" alt="API RESTful">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://taskmate-one-gamma.vercel.app/" class="project-link" aria-label="Voir le projet">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/eli-dev14/TaskMate" class="project-link" aria-label="Voir le code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Appli de Gestion de tâche</h3>
+                            <p class="project-description">
+                                Une appli qui simplifie votre vie, vous permet de mieux vous organiser et d'accomplir plus chaque jour.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">JWT</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="login.jpg" alt="Dashboard analytique">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="/404.html" class="project-link" aria-label="Voir le projet">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="/404.html" class="project-link" aria-label="Voir le code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard analytique</h3>
+                            <p class="project-description">
+                                Tableau de bord interactif avec graphiques en temps réel, filtres avancés et export de données au format CSV.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">API REST</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contactez-moi</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Une question ? Un projet ? Discutons-en !</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Parlons de votre projet</h3>
+                        <p>Je suis disponible pour discuter de vos besoins et voir comment je peux vous aider à concrétiser vos idées.</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>+228 92 24 57 51</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>ledev127@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Localisation</h4>
+                                    <p>Attiégou, Lomé-Togo/Disponible en distance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Votre nom</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Votre email</label>
+                            <input type="email" id="email" name="email" required placeholder="jean@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Création de site web">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fab fa-whatsapp"></i>
+                            Envoyer via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Portfolio. Développé par eli-dev14</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/eli-dev14" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eli-agbozo-014617340/" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://web.facebook.com/eli.agbozo.2025/" aria-label="Twitter">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/22892245751" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
