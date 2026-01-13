@@ -127,7 +127,7 @@ ${message}`;
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
     
-    window.open(whatsappURL, '_blank');
+    window.location.href = whatsappURL;
 
     
     contactForm.reset();
@@ -351,4 +351,5 @@ style.textContent = `
 `;
 
 document.head.appendChild(style);
+
 
