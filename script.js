@@ -122,7 +122,7 @@ ${message}`;
     L
     const encodedMessage = encodeURIComponent(whatsappMessage);
 
-    const whatsappNumber = '22892245751'; // Replace with your WhatsApp number
+    const whatsappNumber = '22892245751';
 
     
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -350,4 +350,5 @@ style.textContent = `
         }
     }
 `;
+
 document.head.appendChild(style);
