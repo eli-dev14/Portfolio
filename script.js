@@ -119,7 +119,6 @@ Sujet : ${subject}
 Message :
 ${message}`;
 
-    L
     const encodedMessage = encodeURIComponent(whatsappMessage);
 
     const whatsappNumber = '22892245751';
@@ -352,3 +351,4 @@ style.textContent = `
 `;
 
 document.head.appendChild(style);
+
